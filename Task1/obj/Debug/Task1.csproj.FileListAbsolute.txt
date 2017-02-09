@@ -1,0 +1,43 @@
+c:\users\admins\documents\visual studio 2015\Projects\Task1\Task1\bin\Debug\Task1.exe.config
+c:\users\admins\documents\visual studio 2015\Projects\Task1\Task1\bin\Debug\Task1.exe
+c:\users\admins\documents\visual studio 2015\Projects\Task1\Task1\bin\Debug\Task1.pdb
+c:\users\admins\documents\visual studio 2015\Projects\Task1\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+c:\users\admins\documents\visual studio 2015\Projects\Task1\Task1\obj\Debug\Task1.exe
+c:\users\admins\documents\visual studio 2015\Projects\Task1\Task1\obj\Debug\Task1.pdb
+c:\Users\adminS\documents\visual studio 2015\Projects\Task1\Task1\bin\Debug\StudentData.dll
+c:\Users\adminS\documents\visual studio 2015\Projects\Task1\Task1\bin\Debug\StudentData.pdb
+C:\Users\adminS\documents\visual studio 2015\Projects\Task1\Task1\bin\Debug\Sort.dll
+C:\Users\adminS\documents\visual studio 2015\Projects\Task1\Task1\bin\Debug\Sort.pdb
+C:\Users\adminS\Documents\FO-340001\Task1\bin\Debug\Task1.exe.config
+C:\Users\adminS\Documents\FO-340001\Task1\obj\Debug\Task1.exe
+C:\Users\adminS\Documents\FO-340001\Task1\obj\Debug\Task1.pdb
+C:\Users\adminS\Documents\FO-340001\Task1\bin\Debug\Task1.exe
+C:\Users\adminS\Documents\FO-340001\Task1\bin\Debug\Task1.pdb
+C:\Users\adminS\Documents\FO-340001\Task1\bin\Debug\Sort.dll
+C:\Users\adminS\Documents\FO-340001\Task1\bin\Debug\StudentData.dll
+C:\Users\adminS\Documents\FO-340001\Task1\bin\Debug\Sort.pdb
+C:\Users\adminS\Documents\FO-340001\Task1\bin\Debug\StudentData.pdb
+C:\Users\adminS\Documents\FO-340001\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+D:\FO-340001\Task1\bin\Debug\Task1.exe.config
+D:\FO-340001\Task1\obj\Debug\Task1.exe
+D:\FO-340001\Task1\obj\Debug\Task1.pdb
+D:\FO-340001\Task1\bin\Debug\Task1.exe
+D:\FO-340001\Task1\bin\Debug\Task1.pdb
+D:\FO-340001\Task1\bin\Debug\Sort.dll
+D:\FO-340001\Task1\bin\Debug\StudentData.dll
+D:\FO-340001\Task1\bin\Debug\Sort.pdb
+D:\FO-340001\Task1\bin\Debug\StudentData.pdb
+D:\FO-340001\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\bin\Debug\Task1.exe.config
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\obj\Debug\Task1.exe
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\obj\Debug\Task1.pdb
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\bin\Debug\Task1.exe
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\bin\Debug\Task1.pdb
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\bin\Debug\Sort.dll
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\bin\Debug\StudentData.dll
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\bin\Debug\Sort.pdb
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\bin\Debug\StudentData.pdb
+C:\Users\adminS\Documents\FO-340001\FO-340001\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+C:\Users\adminS\Documents\FO-340001\FO-340001\Taskk◐\Task1\bin\Debug\Task1.exe.config
+C:\Users\adminS\Documents\FO-340001\FO-340001\Taskk◐\Task1\obj\Debug\Task1.exe
+C:\Users\adminS\Documents\FO-340001\FO-340001\Taskk◐\Task1\obj\Debug\Task1.pdb
