@@ -26,3 +26,11 @@ C:\Users\adminS\Documents\FO-340001\FO-340001\Sort\bin\Debug\StudentData.pdb
 C:\Users\adminS\Documents\FO-340001\FO-340001\Sort\obj\Debug\Sort.csprojResolveAssemblyReference.cache
 C:\Users\adminS\Documents\FO-340001\FO-340001\Sort\obj\Debug\Sort.dll
 C:\Users\adminS\Documents\FO-340001\FO-340001\Sort\obj\Debug\Sort.pdb
+C:\Projects\External_sorting\Sort\bin\Debug\Sort.dll
+C:\Projects\External_sorting\Sort\bin\Debug\Sort.pdb
+C:\Projects\External_sorting\Sort\bin\Debug\StudentData.dll
+C:\Projects\External_sorting\Sort\bin\Debug\StudentData.pdb
+C:\Projects\External_sorting\Sort\obj\Debug\Sort.csprojResolveAssemblyReference.cache
+C:\Projects\External_sorting\Sort\obj\Debug\Sort.csproj.CoreCompileInputs.cache
+C:\Projects\External_sorting\Sort\obj\Debug\Sort.dll
+C:\Projects\External_sorting\Sort\obj\Debug\Sort.pdb

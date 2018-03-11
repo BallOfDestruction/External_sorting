@@ -1,0 +1,11 @@
+C:\Projects\External_sorting\Task1\bin\Debug\TestSorting.exe.config
+C:\Projects\External_sorting\Task1\bin\Debug\TestSorting.exe
+C:\Projects\External_sorting\Task1\bin\Debug\TestSorting.pdb
+C:\Projects\External_sorting\Task1\bin\Debug\Sort.dll
+C:\Projects\External_sorting\Task1\bin\Debug\StudentData.dll
+C:\Projects\External_sorting\Task1\bin\Debug\Sort.pdb
+C:\Projects\External_sorting\Task1\bin\Debug\StudentData.pdb
+C:\Projects\External_sorting\Task1\obj\Debug\TestSorting.csprojResolveAssemblyReference.cache
+C:\Projects\External_sorting\Task1\obj\Debug\TestSorting.csproj.CoreCompileInputs.cache
+C:\Projects\External_sorting\Task1\obj\Debug\TestSorting.exe
+C:\Projects\External_sorting\Task1\obj\Debug\TestSorting.pdb

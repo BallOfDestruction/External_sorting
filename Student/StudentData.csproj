@@ -49,6 +49,7 @@
     </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="StudentFactory.cs" />
+    <Compile Include="StudentXml.cs" />
     <Compile Include="StudentXmlReader.cs" />
     <Compile Include="StudentXmlWriter.cs" />
   </ItemGroup>

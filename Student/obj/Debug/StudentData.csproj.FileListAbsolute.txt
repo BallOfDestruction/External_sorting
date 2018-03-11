@@ -26,3 +26,11 @@ C:\Users\adminS\Documents\FO-340001\FO-340001\Student\obj\Debug\StudentData.Prop
 C:\Users\adminS\Documents\FO-340001\FO-340001\Student\obj\Debug\StudentData.csproj.GenerateResource.Cache
 C:\Users\adminS\Documents\FO-340001\FO-340001\Student\obj\Debug\StudentData.dll
 C:\Users\adminS\Documents\FO-340001\FO-340001\Student\obj\Debug\StudentData.pdb
+C:\Projects\External_sorting\Student\bin\Debug\StudentData.dll
+C:\Projects\External_sorting\Student\bin\Debug\StudentData.pdb
+C:\Projects\External_sorting\Student\obj\Debug\StudentData.csprojResolveAssemblyReference.cache
+C:\Projects\External_sorting\Student\obj\Debug\StudentData.Properties.Resources.resources
+C:\Projects\External_sorting\Student\obj\Debug\StudentData.csproj.GenerateResource.Cache
+C:\Projects\External_sorting\Student\obj\Debug\StudentData.csproj.CoreCompileInputs.cache
+C:\Projects\External_sorting\Student\obj\Debug\StudentData.dll
+C:\Projects\External_sorting\Student\obj\Debug\StudentData.pdb

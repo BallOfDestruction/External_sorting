@@ -14,13 +14,14 @@ namespace StudentData
         /// <param name="maxSize">Его максимальный размер в байтах</param>
         public static void GenerateBiGData(string path, long maxSize)
         {
-            StudentXmlWriter writer = new StudentXmlWriter(path);
-            StudentFactory factory = new StudentFactory();
-            while (writer.LengthFile < maxSize)
+            using (var writer = new StudentXmlWriter(path))
             {
-                writer.Write(factory.GenerateElement());
+                StudentFactory factory = new StudentFactory();
+                while (writer.LengthFile < maxSize)
+                {
+                    writer.Write(factory.GenerateElement());
+                }
             }
-            writer.Close();
         }
         /// <summary>
         /// Генерация словаря с датами
@@ -28,28 +29,29 @@ namespace StudentData
         /// <param name="age">Возраст людишек</param>
         public static void GenerateDate(int age, string DBOPath)
         {
-            StreamWriter writer = new StreamWriter(DBOPath);
-            int year = DateTime.Now.Year - age;
-            int count = 0;
-            for(int i =1; i < 13;i++)
+            using (var writer = new StreamWriter(DBOPath))
             {
-                for(int j = 1; j <= DateTime.DaysInMonth(year, i);j++)
+                int year = DateTime.Now.Year - age;
+                int count = 0;
+                for (int i = 1; i < 13; i++)
                 {
-                    writer.WriteLine(new DateTime(year, i, j).ToShortDateString());
-                    Console.WriteLine(count);
-                    count++;
+                    for (int j = 1; j <= DateTime.DaysInMonth(year, i); j++)
+                    {
+                        writer.WriteLine(new DateTime(year, i, j).ToShortDateString());
+                        count++;
+                    }
                 }
             }
-            writer.Close();
         }
         public static void GenerateNumber(long start, long end, string path)
         {
-            StreamWriter writer = new StreamWriter(path);
-            for (long i = start; i <= end; i++)
+            using (var writer = new StreamWriter(path))
             {
-                writer.WriteLine(i.ToString());
+                for (long i = start; i <= end; i++)
+                {
+                    writer.WriteLine(i.ToString());
+                }
             }
-            writer.Close();
         }
     }
 }

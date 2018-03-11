@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj", "{39029B48-037F-4C7E-9F5B-7231C0DA3CFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSorting", "Task1\TestSorting.csproj", "{39029B48-037F-4C7E-9F5B-7231C0DA3CFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentData", "Student\StudentData.csproj", "{773132E1-2011-418E-B012-9FBD636A37E8}"
 EndProject
@@ -30,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA0AD7F6-ECFF-47AF-BC98-2A0E98F66CBE}
 	EndGlobalSection
 EndGlobal
