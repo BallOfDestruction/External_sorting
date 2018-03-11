@@ -11,34 +11,36 @@ namespace StudentData
         /// <summary>
         /// Генерация большого файла
         /// </summary>
+        /// <param name="path">Путь к файлу</param>
         /// <param name="maxSize">Его максимальный размер в байтах</param>
         public static void GenerateBiGData(string path, long maxSize)
         {
-            using (var writer = new StudentXmlWriter(path))
+            using (var writer = new StudentXmlWriter())
             {
-                StudentFactory factory = new StudentFactory();
+                writer.OpenFile(path);
+                var factory = new StudentFactory();
                 while (writer.LengthFile < maxSize)
                 {
                     writer.Write(factory.GenerateElement());
                 }
             }
         }
+
         /// <summary>
         /// Генерация словаря с датами
         /// </summary>
         /// <param name="age">Возраст людишек</param>
-        public static void GenerateDate(int age, string DBOPath)
+        /// <param name="dboPath">Путь к вайлу</param>
+        public static void GenerateDate(int age, string dboPath)
         {
-            using (var writer = new StreamWriter(DBOPath))
+            using (var writer = new StreamWriter(dboPath))
             {
-                int year = DateTime.Now.Year - age;
-                int count = 0;
-                for (int i = 1; i < 13; i++)
+                var year = DateTime.Now.Year - age;
+                for (var i = 1; i < 13; i++)
                 {
-                    for (int j = 1; j <= DateTime.DaysInMonth(year, i); j++)
+                    for (var j = 1; j <= DateTime.DaysInMonth(year, i); j++)
                     {
                         writer.WriteLine(new DateTime(year, i, j).ToShortDateString());
-                        count++;
                     }
                 }
             }
@@ -47,7 +49,7 @@ namespace StudentData
         {
             using (var writer = new StreamWriter(path))
             {
-                for (long i = start; i <= end; i++)
+                for (var i = start; i <= end; i++)
                 {
                     writer.WriteLine(i.ToString());
                 }

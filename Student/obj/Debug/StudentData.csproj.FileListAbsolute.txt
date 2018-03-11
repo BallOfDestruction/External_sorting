@@ -34,3 +34,5 @@ C:\Projects\External_sorting\Student\obj\Debug\StudentData.csproj.GenerateResour
 C:\Projects\External_sorting\Student\obj\Debug\StudentData.csproj.CoreCompileInputs.cache
 C:\Projects\External_sorting\Student\obj\Debug\StudentData.dll
 C:\Projects\External_sorting\Student\obj\Debug\StudentData.pdb
+C:\Projects\External_sorting\Student\bin\Debug\ExternalSort.Core.dll
+C:\Projects\External_sorting\Student\bin\Debug\ExternalSort.Core.pdb

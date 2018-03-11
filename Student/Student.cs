@@ -3,7 +3,7 @@
 namespace StudentData
 {
     [Serializable]
-    public struct Student : IComparable
+    public class Student : IComparable
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -12,6 +12,11 @@ namespace StudentData
         public int NumberCard { get; set; }
         public int NumberSpecialty { get; set; }
         public string Department { get; set; }
+
+        public Student()
+        {
+            
+        }
 
         public Student(string firstName, string lastName, string middleName, DateTime dbo, int numberCard, int numberSpeciality, string department)
         {
@@ -30,27 +35,13 @@ namespace StudentData
 
         public int CompareTo(object obj)
         {
-            if(obj is Student st)
-            {
-                var firstCompare = FirstName.CompareTo(st.FirstName);
-                if (firstCompare == 0)
-                {
-                    var secondCompare = NumberCard.CompareTo(st.NumberCard);
-                    if (secondCompare == 0)
-                    {
-                        return DOB.CompareTo(st.DOB);
-                    }
-                    else
-                    {
-                        return secondCompare;
-                    }
-                }
-                else
-                {
-                    return firstCompare;
-                }
-            }
-            return 0;
+            if (!(obj is Student st)) return 0;
+
+            var firstCompare = FirstName?.CompareTo(st.FirstName) ?? 0;
+            if (firstCompare != 0) return firstCompare;
+
+            var secondCompare = NumberCard.CompareTo(st.NumberCard);
+            return secondCompare == 0 ? DOB.CompareTo(st.DOB) : secondCompare;
         }
     }
 }

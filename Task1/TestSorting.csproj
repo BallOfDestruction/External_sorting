@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestSorting</RootNamespace>
     <AssemblyName>TestSorting</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,9 +51,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sort\Sort.csproj">
-      <Project>{d9ef26cf-2cc2-4aa3-8204-e70e1249f5a4}</Project>
-      <Name>Sort</Name>
+    <ProjectReference Include="..\ExternalSort.Core\ExternalSort.Core.csproj">
+      <Project>{7C465E48-44FA-46BC-883F-C7801D4A0349}</Project>
+      <Name>ExternalSort.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalSort\ExternalSort.csproj">
+      <Project>{f102350b-1360-4d17-8a6a-498d21f79949}</Project>
+      <Name>ExternalSort</Name>
     </ProjectReference>
     <ProjectReference Include="..\Student\StudentData.csproj">
       <Project>{773132e1-2011-418e-b012-9fbd636a37e8}</Project>

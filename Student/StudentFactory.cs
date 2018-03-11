@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 
@@ -13,60 +11,62 @@ namespace StudentData
         public string FirstNamePath { get; set; } = "FirstName.d";
         public string LastNamePath { get; set; } = "LastName.d";
         public string MiddleNamePath { get; set; } = "MiddleName.d";
-        public string DBOPath { get; set; } = "DBO.d";
+        public string DboPath { get; set; } = "DBO.d";
         public string NumberCardPath { get; set; } = "NumberCard.d";
         public string NumberSpecialtyPath { get; set; } = "NumerSpeciality.d";
         public string DepartnmentPath { get; set; } = "Department.d";
 
-        private static Random random = new Random();
+        private static readonly Random Random = new Random();
 
-        private string[] firstName;
-        private string[] lastName;
-        private string[] middleName;
-        private DateTime[] DBO;
-        private int[] numberCard;
-        private int[] numberSpeciality;
-        private string[] department;
+        private readonly string[] _firstName;
+        private readonly string[] _lastName;
+        private readonly string[] _middleName;
+        private readonly DateTime[] _dbo;
+        private readonly int[] _numberCard;
+        private readonly int[] _numberSpeciality;
+        private readonly string[] _department;
 
         public StudentFactory()
         {
-            firstName = GetArrayData<string>(FirstNamePath);
-            lastName = GetArrayData<string>(LastNamePath);
-            middleName = GetArrayData<string>(MiddleNamePath);
-            DBO = GetArrayData<DateTime>(DBOPath);
-            numberCard = GetArrayData<int>(NumberCardPath);
-            numberSpeciality = GetArrayData<int>(NumberSpecialtyPath);
-            department = GetArrayData<string>(DepartnmentPath);
+            _firstName = GetArrayData<string>(FirstNamePath);
+            _lastName = GetArrayData<string>(LastNamePath);
+            _middleName = GetArrayData<string>(MiddleNamePath);
+            _dbo = GetArrayData<DateTime>(DboPath);
+            _numberCard = GetArrayData<int>(NumberCardPath);
+            _numberSpeciality = GetArrayData<int>(NumberSpecialtyPath);
+            _department = GetArrayData<string>(DepartnmentPath);
         }
 
         public Student GenerateElement()
         {
-            Student student = new Student();
-            student.FirstName = GetRandomValue(firstName);
-            student.LastName = GetRandomValue(lastName);
-            student.MiddleName = GetRandomValue(middleName);
-            student.DOB = GetRandomValue(DBO);
-            student.NumberCard = GetRandomValue(numberCard);
-            student.NumberSpecialty = GetRandomValue(numberSpeciality);
-            student.Department = GetRandomValue(department);
+            var student = new Student
+            {
+                FirstName = GetRandomValue(_firstName),
+                LastName = GetRandomValue(_lastName),
+                MiddleName = GetRandomValue(_middleName),
+                DOB = GetRandomValue(_dbo),
+                NumberCard = GetRandomValue(_numberCard),
+                NumberSpecialty = GetRandomValue(_numberSpeciality),
+                Department = GetRandomValue(_department)
+            };
             return student;
         }
 
-        private T GetRandomValue<T>(T[] array)
+        private static T GetRandomValue<T>(IReadOnlyList<T> array)
         {
-            return array[random.Next(array.Length)];
+            return array[Random.Next(array.Count)];
         }
 
         private T[] GetArrayData<T>(string path)
         {
             var reader = new StreamReader(path);
             var data = reader.ReadToEnd();
-            return data.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Select(w => Parse<T>(w)).ToArray();
+            return data.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Select(Parse<T>).ToArray();
         }
 
-        private T Parse<T>(string str)
+        private static T Parse<T>(string str)
         {
-            T obj = default(T);
+            var obj = default(T);
             switch (typeof(T).ToString())
             {
                 case "System.String":

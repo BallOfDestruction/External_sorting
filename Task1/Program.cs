@@ -1,7 +1,7 @@
 ﻿using StudentData;
-using Sort;
 using System.Diagnostics;
 using System;
+using ExternalSort;
 
 namespace TestSorting
 {
@@ -10,16 +10,16 @@ namespace TestSorting
         static void Main(string[] args)
         {
             var fileName = "test.d";
-            var fileSize = 1000L * 1024L;
+            var fileSize = 1000 * 1024L;
 
             GenerationBigData.GenerateBiGData(fileName, fileSize);
-            SortSimpleMerge sort = new SortSimpleMerge();
+            var sort = new SortSimpleMerge();
             var timer = new Stopwatch();
             timer.Start();
-            sort.Sort("test.d");
+            sort.DoSorting<StudentXmlReader, StudentXmlWriter, Student>("test.d");
             timer.Stop();
             Console.WriteLine($"{timer.ElapsedMilliseconds} мс");
-            Console.WriteLine(sort.IsSorted(fileName));
+            Console.WriteLine(sort.IsSorted<StudentXmlReader, Student>(fileName));
             Console.ReadLine();
         }
     }

@@ -2,18 +2,18 @@
 using System.IO;
 using System.Xml;
 using System;
+using ExternalSort.Core;
 
 namespace StudentData
 {
-    public class StudentXmlWriter : StudentXml, IDisposable
+    public class StudentXmlWriter : StudentXml, IExternalWriter<Student>
     {
         private XmlTextWriter _writer;
         private FileStream _file;
 
         public long LengthFile => _file?.Length ?? 0;
 
-
-        public StudentXmlWriter(string path)
+        public void OpenFile(string path)
         {
             _file = new FileStream(path, FileMode.Create);
             _writer = new XmlTextWriter(new BufferedStream(_file), Encoding.UTF8);
