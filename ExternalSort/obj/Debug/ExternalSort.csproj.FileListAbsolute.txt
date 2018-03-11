@@ -1,8 +1,0 @@
-C:\Projects\External_sorting\ExternalSort\bin\Debug\ExternalSort.dll
-C:\Projects\External_sorting\ExternalSort\bin\Debug\ExternalSort.pdb
-C:\Projects\External_sorting\ExternalSort\bin\Debug\ExternalSort.Core.dll
-C:\Projects\External_sorting\ExternalSort\bin\Debug\ExternalSort.Core.pdb
-C:\Projects\External_sorting\ExternalSort\obj\Debug\ExternalSort.csprojResolveAssemblyReference.cache
-C:\Projects\External_sorting\ExternalSort\obj\Debug\ExternalSort.csproj.CoreCompileInputs.cache
-C:\Projects\External_sorting\ExternalSort\obj\Debug\ExternalSort.dll
-C:\Projects\External_sorting\ExternalSort\obj\Debug\ExternalSort.pdb

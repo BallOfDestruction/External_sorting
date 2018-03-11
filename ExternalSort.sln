@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSorting", "Task1\TestSorting.csproj", "{39029B48-037F-4C7E-9F5B-7231C0DA3CFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSorting", "TestSorting\TestSorting.csproj", "{39029B48-037F-4C7E-9F5B-7231C0DA3CFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentData", "Student\StudentData.csproj", "{773132E1-2011-418E-B012-9FBD636A37E8}"
 EndProject

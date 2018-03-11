@@ -77,3 +77,12 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/.vs
+/Student/obj
+/Student/bin
+/Sort/obj
+/Sort/bin
+/ExternalSort.Core/obj
+/ExternalSort.Core/bin
+/ExternalSort/obj
+/ExternalSort/bin
