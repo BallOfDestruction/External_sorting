@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SortSimpleMerge.cs" />
+    <Compile Include="TwoWayMerge.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExternalSort.Core\ExternalSort.Core.csproj">

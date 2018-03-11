@@ -4,7 +4,10 @@ using ExternalSort.Core;
 
 namespace ExternalSort
 {
-    public class SortSimpleMerge : IExternalSort
+    /// <summary>
+    /// Сортировка двухпутевым слиянием
+    /// </summary>
+    public class TwoWayMerge : IExternalSort
     {
         private const string FirstFilename = "1.d";
         private const string SecondFilename = "2.d";
@@ -12,12 +15,12 @@ namespace ExternalSort
         /// <summary>
         /// Сортировка двухпутевого слияния Источник → https://prog-cpp.ru/sort-merge/
         /// Исходная последовательность разбивается на две подпоследовательности:
-        ///Двухпутевое слияние
-        ///Исходная последовательность разбивается на две подпоследовательности:
-        ///Эти две подпоследовательности объединяются в одну, содержащую упорядоченные пары.
-        ///Полученная последовательность снова разбивается на две, и пары объединяются в упорядоченные четверки:
-        ///Полученная последовательность снова разбивается на две и собирается в упорядоченные восьмерки.
-        ///Данная операция повторяется до тех пор, пока полученная упорядоченная последовательность не будет иметь такой же размер, как у сортируемой.
+        /// Двухпутевое слияние
+        /// Исходная последовательность разбивается на две подпоследовательности:
+        /// Эти две подпоследовательности объединяются в одну, содержащую упорядоченные пары.
+        /// Полученная последовательность снова разбивается на две, и пары объединяются в упорядоченные четверки:
+        /// Полученная последовательность снова разбивается на две и собирается в упорядоченные восьмерки.
+        /// Данная операция повторяется до тех пор, пока полученная упорядоченная последовательность не будет иметь такой же размер, как у сортируемой.
         /// </summary>
         /// <param name="path">Путь к файлу</param>
         public void DoSorting<TReader, TWriter, TInnerType>(string path)
@@ -116,7 +119,7 @@ namespace ExternalSort
             }
         }
 
-        private void DoPhase<TInnerType>(IExternalReader<TInnerType> readerOne, IExternalReader<TInnerType> readerTwo,
+        private void DoPhase<TInnerType>(IExternalReader<TInnerType> readerOne, IExternalReader<TInnerType> readerTwo, 
             IExternalWriter<TInnerType> writer, long step)
             where TInnerType : class, IComparable
         {

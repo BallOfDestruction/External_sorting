@@ -13,7 +13,7 @@ namespace TestSorting
             var fileSize = 1000 * 1024L;
 
             GenerationBigData.GenerateBiGData(fileName, fileSize);
-            var sort = new SortSimpleMerge();
+            var sort = new TwoWayMerge();
             var timer = new Stopwatch();
             timer.Start();
             sort.DoSorting<StudentXmlReader, StudentXmlWriter, Student>("test.d");
